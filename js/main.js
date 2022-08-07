@@ -1,10 +1,8 @@
-var data = {
-    email: 'email',
-    password: 'password'
-}
+// Menu
+const menu = document.querySelector(".navbar__links")
+const menuButton = document.querySelector(".navbar__icons")
 
-fetch('https://sheetdb.io/api/v1/07mviz9vjn1zn', {
-    method: 'POST',
-    body: data
+menuButton.addEventListener('click', () => {
+    menu.classList.toggle("navbar__open")
+    menuButton.classList.toggle("open")
 })
-    
